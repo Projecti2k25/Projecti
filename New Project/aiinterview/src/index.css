@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Centering the login container */
+.auth-container {
+  @apply flex items-center justify-center min-h-screen;
+}
+
+/* Styling the login box */
+.auth-box {
+  @apply bg-white p-6 rounded-lg shadow-lg border border-gray-300 w-96 text-center;
+}
+
+/* Input fields */
+.auth-input {
+  @apply w-full p-2 mb-3 border rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Buttons */
+.auth-button {
+  @apply w-full bg-blue-500 text-white p-2 rounded font-semibold hover:bg-blue-600 transition duration-200;
+}
+
+/* Forgot password */
+.forgot-password {
+  @apply text-sm mt-3 text-gray-600 cursor-pointer hover:text-gray-800;
+}
+
+/* Toggle between login/signup */
+.auth-toggle {
+  @apply mt-4 bg-white p-3 w-96 text-center border border-gray-300;
+}
+
+.auth-toggle span {
+  @apply text-blue-500 font-semibold cursor-pointer hover:underline;
+}
